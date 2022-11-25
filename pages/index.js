@@ -24,13 +24,13 @@ export default function Home() {
               </div>
           </nav>
           <div className='grid place-items-center '>
-            <h1 className='text-red-700 text-9xl pb-20'>Ruben Wilson</h1>
+            <h1 className='text-red-700 text-9xl pb-10'>Ruben Wilson</h1>
             <h3 className=' pb-10 text-5xl text-gray-600'>Software Developer</h3>
             <div className='grid place-items-center max-w-[60em]'>
               <p className='leading-6 text-sm  text-gray-500'>A twenty-year-old developer who is highly enthusiastic and driven. After spending nearly two years of my life preparing for the Marines, I never expected to find myself excited to start something new. Sustaining an injury in the Royal Marine's commando training, I was left with a fractured shoulder and I needed to find intellectual and physical stimulation which would fulfil my thirst for a challenge. Luckily I found Coding.</p>
               <p className='leading-6 text-sm  text-gray-500'>Follow me to see where my journey goes!</p>
             </div>
-            <h2 className='text-5xl text-gray-600 pt-10'>Projects:</h2>
+            <h2 className='text-5xl text-gray-600 pt-[10rem]'>Projects:</h2>
           
           </div>
 
