@@ -39,7 +39,7 @@ function cards(){
     <div >
        <motion.div ref={carousel} className=" cursor-pointer overflow-hidden mt-[2rem] mb-4 max-w-5xl rounded-xl">
         <motion.div drag="x" dragConstraints={{ right: 0, left: -width}} className="flex ">
-          <Card name="MultiNote" image1={multiNote} image2={multiNoteLogo} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://genuine-fairy-b83311.netlify.app/" />
+          <Card name="MultiNote" image1={multiNote} image2={multiNoteLogo} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://subtle-dragon-d3ad9a.netlify.app/" />
           <Card name="ReefRunner" image1={reefRunner} image2={reefRunnerSc} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" /> 
           <Card name="AceBook" image1={aceBookLogo} image2={aceBook} />  
           <Card name="Makers BnB" image1={makerBnbLogo} image2={makerBnb} />   
