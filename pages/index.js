@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill, BsGithub, BsLinkedin } from 'react-icons/bs'
-import Image from "next/image"
-import multiNote from "../public/multiNote.png"
 
 import Cards from "../components/cards.js"
 
@@ -16,7 +14,8 @@ export default function Home() {
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
           <nav className='py-2 flex justify-between'>
-            <a href='https://github.com/ruben-wilson/CV/blob/master/Makers%20CV-%20Software%20Engineer%20.pdf' className='bg-red-800 text-white px-4 py-2 rounded-lg mr-41'> MyCv </a>
+            <a href='https://github.com/ruben-wilson/CV/blob/master/Makers%20CV-%20Software%20Engineer%20.pdf' className='bg-red-800 text-white px-4 py-2 max-h-10 rounded-lg mr-41'> MyCv </a>
+            <h1 className='text-red-700 text-9xl pb-10 ml-[13rem]'>Ruben Wilson</h1>
               <div className= 'flex mt-2 ml-40 cursor-pointer text-2xl '>
                 <a className='mx-2'><BsFillMoonStarsFill /></a >
               <a href='https://github.com/ruben-wilson' className='mx-2'>< BsGithub /></a>
@@ -24,13 +23,12 @@ export default function Home() {
               </div>
           </nav>
           <div className='grid place-items-center '>
-            <h1 className='text-red-700 text-9xl pb-10'>Ruben Wilson</h1>
             <h3 className=' pb-10 text-5xl text-gray-600'>Software Developer</h3>
             <div className='grid place-items-center max-w-[60em]'>
               <p className='leading-6 text-sm  text-gray-500'>A twenty-year-old developer who is highly enthusiastic and driven. After spending nearly two years of my life preparing for the Marines, I never expected to find myself excited to start something new. Sustaining an injury in the Royal Marine's commando training, I was left with a fractured shoulder and I needed to find intellectual and physical stimulation which would fulfil my thirst for a challenge. Luckily I found Coding.</p>
               <p className='leading-6 text-sm  text-gray-500'>Follow me to see where my journey goes!</p>
             </div>
-            <h2 className='text-5xl text-gray-600 pt-[10rem]'>Projects:</h2>
+            <h2 className='text-5xl text-gray-600 pt-[3rem]'>Projects:</h2>
           
           </div>
 
