@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'myWork' : "url('../public/mywork-background2.png')"
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

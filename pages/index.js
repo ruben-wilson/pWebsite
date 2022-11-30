@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsDownload} from 'react-icons/bs'
 import { GiTronArrow } from 'react-icons/gi'
 
+
 export default function Home() {
   return (      
         <section className='flex'>
