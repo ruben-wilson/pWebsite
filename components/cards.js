@@ -33,7 +33,7 @@ export default function cards(){
 
   return (
     <div >
-      <motion.div ref={carousel} className="cursor-pointer overflow-hidden mt-[2rem] mb-4 max-h-[40rem] max-w-7xl rounded-xl">
+      <motion.div ref={carousel} className="cursor-pointer overflow-hidden mt-[2rem] mb-4 max-h-[40rem] max-w-[39rem] rounded-xl">
         <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex ">
           <Card name="MultiNote" image1={multiNoteLogo} image2={multiNote} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://subtle-dragon-d3ad9a.netlify.app/" content={Contents.content.multiNote} />
           <Card name="ReefRunner" image1={reefRunnerLogo} image2={reefRunner} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" content={Contents.content.reefRunner} />

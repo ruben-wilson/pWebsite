@@ -5,7 +5,7 @@ function card({name, image1, image2, repo, website, content}){
 
   return (
 
-    <motion.div className="min-h-[30rem] max-h-[40rem] min-w-[30rem] p-2 bg-opacity-0 bg-blue-800 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
+    <motion.div className="min-h-[30rem] max-h-[40rem] min-w-[30rem] p-2  bg-blue-900 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
       <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-white dark:text-white">{name ? name : 'default'}</h5>
       <div className="flex justify-between px-4">
         <Image className="w-[12.5rem] h-[8rem] rounded-[1rem]" src={image1} draggable="false"></Image>

@@ -1,21 +1,20 @@
 import Cards from '../components/cards';
-import Image from 'next/image';
+
 
 
 
 export default function Mywork(){
   return(
-    <div className=''>
-      <div className='mt-[10rem] ml-[7rem] flex justify-center'>
-        <h1 className='mr-[29rem] pb-2 text-9xl text-transparent bg-gradient-to-r bg-clip-text from-red-500 to-white'>My work to date...</h1>
+    
+      <div className='flex w-full min-h-[93vh] z-2 bg-myWork bg-no-repeat bg-cover bg-center bg-fixed'>
+        <h1 className='ml-[16.5rem] mt-[10rem] pb-2 max-w-xl  text-7xl text-transparent bg-gradient-to-r bg-clip-text from-red-500 to-white'>My recent projects...</h1>
+        <div className='ml-[20rem] mt-[4rem]'>
+          <Cards />
+        </div>
+      </div>
 
-      </div>
-      <div className='bg-myWork bg-no-repeat bg-cover bg-center bg-fixed w-full flex justify-center'> 
-        <Cards />
-      </div>
-      
-      
-    </div>
+     
+
     
   )
 }
