@@ -5,13 +5,15 @@ function card({name, image1, image2, repo, website, content}){
 
   return (
 
-    <motion.div className="min-h-[30rem] max-h-[40rem] min-w-[30rem] p-2  bg-blue-900 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
+    <motion.div className="max-h-[30rem] min-w-[30rem] p-2  bg-blue-900 rounded-lg shadow-green-500 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
       <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-white dark:text-white">{name ? name : 'default'}</h5>
       <div className="flex justify-between px-4">
         <Image className="w-[12.5rem] h-[8rem] rounded-[1rem]" src={image1} draggable="false"></Image>
         <Image className="w-[12.5rem] h-[8rem] rounded-[1rem]" src={image2} draggable="false"></Image>
       </div>
-      <p className="m-2 mt-4 font-normal text-white dark:text-gray-400">Technologies used:</p>
+      <p className="m-2 mt-4 font-normal text-white dark:text-gray-400">Description:</p>
+      <p className="m-2 mt-4 font-normal text-white dark:text-gray-400"> this is a project desgined to help people keep track of daily tasks and goals.</p>
+      <p className="m-2 mt-20 font-normal text-white dark:text-gray-400">Technologies used:</p>
       <div className="flex justify-center">
         {
           content.map( item => {
