@@ -5,13 +5,15 @@ function card({name, image1, image2, repo, website, content}){
 
   return (
 
-    <motion.div className="min-h-[30rem] max-h-[40rem] min-w-[30rem] p-2 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
-      <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name ? name : 'default'}</h5>
-      <div className="flex justify-between px-4">
-        <Image className="w-[12.5rem] h-[8rem] rounded-[1rem]" src={image1} draggable="false"></Image>
-        <Image className="w-[12.5rem] h-[8rem] rounded-[1rem]" src={image2} draggable="false"></Image>
+    <motion.div className="max-h-[26rem] min-w-[26rem] p-2  bg-blue-900 rounded-lg shadow-green-500 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
+      <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-white dark:text-white">{name ? name : 'default'}</h5>
+      <div className="flex justify-between ">
+        <Image className="w-[12.5rem] h-[8rem] rounded-[1rem] p-1" src={image1} draggable="false"></Image>
+        <Image className="w-[12.5rem] h-[8rem] rounded-[1rem] p-1" src={image2} draggable="false"></Image>
       </div>
-      <p className="m-2 mt-4 font-normal text-gray-700 dark:text-gray-400">Technologies used:</p>
+      <p className="ml-2 mt-4 font-normal text-white dark:text-gray-400">Description:</p>
+      <p className="m-2 font-normal text-white dark:text-gray-400"> this is a project desgined to help people keep track of daily tasks and goals.</p>
+      <p className="m-2 mt-4 font-normal text-white dark:text-gray-400">Technologies used:</p>
       <div className="flex justify-center">
         {
           content.map( item => {
@@ -19,12 +21,15 @@ function card({name, image1, image2, repo, website, content}){
           })
         }
       </div>
-      <a href={repo} className="mt-[10rem] ml-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        View Repo
-      </a>
-      <a href={website} className="ml-[16rem]  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        try out app
-      </a>
+      <div className="flex justify-between">
+        <a href={repo} className="mt-2 inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          View Repo
+        </a>
+        <a href={website} className="mt-2  inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          try out app
+        </a>
+      </div>
+      
     </motion.div>
   )
 
