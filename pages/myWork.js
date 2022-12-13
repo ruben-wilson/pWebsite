@@ -3,7 +3,7 @@ import Cards from '../components/cards';
 
 
 
-export default function Mywork(){
+export default function myWork(){
   return(
     
       <div className='flex w-full min-h-[92vh] z-2 bg-myWork bg-no-repeat bg-cover bg-center bg-fixed'>
