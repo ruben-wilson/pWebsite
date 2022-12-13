@@ -6,7 +6,7 @@ const readMore = ({ preview, content, content2 }) =>{
         <p className="text-gray-400">{preview} <span className="text-gray-50 font-bold">click to read more ...</span></p>
       </div>
       <div className="collapse-content ">
-        <p className="text-gray-400">{content}</p><br></br>
+        <p id="dropDown1" className="text-gray-400">{content}</p><br></br>
         <p className="text-gray-400">{content2}</p>
       </div>
     </div>

@@ -45,16 +45,16 @@ const layout = ({children}) =>{
               <ul className="menu menu-horizontal p-0">
           
                 <div className="dropdown dropdown-hover">
-                <li tabIndex={0}><a>Contact</a></li>
-                  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-blue-900 rounded-box">
-                  <a className='p-2' href='https://github.com/ruben-wilson'><BsGithub size={50} /></a>
-                  <a className='p-2' href='https://www.linkedin.com/in/ruben-wilson-6a774a254/'><BsLinkedin size={50} /></a>
+                <li tabIndex={0} id='contact'><a>Contact</a></li>
+                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-blue-900 rounded-box" id='contactList'>
+                  <a className='p-2' href='https://github.com/ruben-wilson' id='contactGithub'><BsGithub size={50} /></a>
+                  <a className='p-2' href='https://www.linkedin.com/in/ruben-wilson-6a774a254/' id='contactLinkedin'><BsLinkedin size={50} /></a>
                   <button ref={number} value='07722160086' onClick={() => clipBoard(number, 'number')} className='p-2'><BsPhoneFill size={50}/></button>
                   <button ref={email} value='rwilson-connell@yahoo.com' onClick={() => clipBoard(email, 'email')} className='p-2'><MdEmail size={50} /></button>     
                 </ul>
                 </div>
-                <li><a href='/aboutMe'>About Me</a></li>
-              <li><a href='/myWork'>My Work</a></li>
+              <li id='aboutMe'><a href='/aboutMe'>About Me</a></li>
+              <li id='myWorkLink'><a href='/myWork'>My Work</a></li>
               </ul>
             </div>
           </nav>
