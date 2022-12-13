@@ -9,11 +9,11 @@ import Contents from '../components/techContent.js'
 import chitterLogo from "../public/logo/chitterLogo.png"
 import makerBnbLogo from "../public/logo/makersbnbLogo.png"
 import aceBookLogo from "../public/logo/aceBookLogo.png"
-import multiNoteLogo from "../public/logo/multinoteLogo.png"
+import multiNoteLogo from "../public/logo/multiNoteLogo.png"
 import reefRunnerLogo from "../public/logo/reefrunnerLogo.png"
 
 
-import makerBnb from "../public/screenshots/makerBnb.png"
+import makerBnb from "../public/screenshots/makerBnB.png"
 import aceBook from "../public/screenshots/aceBook.png"
 import multiNote from "../public/screenshots/multiNote.png"
 import reefRunner from "../public/screenshots/reefrunnerSc.png"
