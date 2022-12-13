@@ -45,7 +45,7 @@ const layout = ({children}) =>{
               <ul className="menu menu-horizontal p-0">
           
                 <div className="dropdown dropdown-hover">
-                <li tabIndex={0}><a>contact</a></li>
+                <li tabIndex={0}><a>Contact</a></li>
                   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-blue-900 rounded-box">
                   <a className='p-2' href='https://github.com/ruben-wilson'><BsGithub size={50} /></a>
                   <a className='p-2' href='https://www.linkedin.com/in/ruben-wilson-6a774a254/'><BsLinkedin size={50} /></a>
