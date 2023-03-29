@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AvatarPainting from '../public/Avatar-painting.png'
+import AvatarPainting from '../public/Avatar-painting.png';
 
 import ReadMore from "../components/readMore";
 

@@ -1,7 +1,7 @@
-import avatar from '../public/Avatar-studying.png'
+import avatar from '../public/Avatar-studying.png';
 import Image from "next/image";
-import { BsDownload} from 'react-icons/bs'
-import { GiTronArrow } from 'react-icons/gi'
+import { BsDownload} from 'react-icons/bs';
+import { GiTronArrow } from 'react-icons/gi';
 
 
 

@@ -1,6 +1,6 @@
 import Cards from '../components/cards';
 
-import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/Bi'
+import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/bi';
 
 
 
