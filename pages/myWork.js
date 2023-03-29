@@ -17,6 +17,7 @@ export default function myWork(){
           </div>
           <div class="container mx-auto mt-[12rem] mr">
             <Cards />
+          <h2 className='absolute top-[98%] left-[47%] transform'> {("<- Drag to scroll ->")} </h2>
           </div>
           <div className='absolute top-[57%] left-[80%] transform'>
             <BiArrowFromLeft size={100} />
