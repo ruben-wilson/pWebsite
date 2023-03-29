@@ -1,20 +1,31 @@
 import Cards from '../components/cards';
 
+import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/Bi'
 
 
 
 export default function myWork(){
   return(
-    
-      <div className='flex w-full min-h-[92vh] z-2 bg-myWork bg-no-repeat bg-cover bg-center bg-fixed'>
-      <div className='ml-[12rem] mt-[4rem] h-fit w-[15rem] desktop:ml-[17rem] laptop:mt-[5rem] laptop:ml-[11.75rem]'>
-        <h1 className='pb-2 text-6xl text-transparent bg-gradient-to-r bg-clip-text from-red-500 to-white'>My recent projects...</h1>
+  
+      <div className='relative w-full min-h-full'>
+        <div className='absolute h-fit   top-[10%] left-[13%] transform'>
+        <h1 className='text-8xl  mb-2 py-4 md:text-base text-transparent bg-gradient-to-r bg-clip-text from-blue-400 to-white'>My recent projects...</h1>
         </div>
-        
-      <div className='ml-[27.5rem] desktop:mt-[3rem] desktop:ml-[45rem] laptop:mt-[1.2rem] laptop:ml-[27.4rem]'>
-          <Cards />
+        <div className='flex justify-center'>
+          <div className=' absolute top-[57%] left-[13%] transform'>
+                <BiArrowFromRight size={100} />
+          </div>
+          <div class="container mx-auto mt-[12rem] mr">
+            <Cards />
+          </div>
+          <div className='absolute top-[57%] left-[80%] transform'>
+            <BiArrowFromLeft size={100} />
+          </div>
         </div>
       </div>
+
+
+      
 
      
 

@@ -33,14 +33,15 @@ export default function cards(){
 
   return (
     <div >
-      <motion.div ref={carousel} className="cursor-pointer overflow-hidden mt-[2rem] mb-4 max-h-[30rem] max-w-[30rem] rounded-xl">
+      <motion.div ref={carousel} className="cursor-pointer overflow-hidden mt-[2rem] mb-4 max-h-[30rem] max-w-[50rem] rounded-xl">
         <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex" id='cards-myWork'>
-          <Card name="MultiNote" image1={multiNoteLogo} image2={multiNote} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://jazzy-taffy-d5f222.netlify.app" content={Contents.content.multiNote} />
-          <Card name="ReefRunner" image1={reefRunnerLogo} image2={reefRunner} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" content={Contents.content.reefRunner} />
+          <Card name="ReefRunner" image1={reefRunnerLogo} image2={reefRunner} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" content={Contents.content.reefRunner} isHosted="true" />
+          <Card name="MultiNote" image1={multiNoteLogo} image2={multiNote} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://jazzy-taffy-d5f222.netlify.app" content={Contents.content.multiNote} isHosted="true" />
           <Card name="AceBook" image1={aceBookLogo} image2={aceBook} content={Contents.content.aceBook} />
           <Card name="Makers BnB" image1={makerBnbLogo} image2={makerBnb} content={Contents.content.makersBnb} />
           <Card name="Chitter" image1={chitterLogo} image2={chitter} content={Contents.content.chitter} />
         </motion.div>
+        <div></div>
       </motion.div>
     </div> 
   )

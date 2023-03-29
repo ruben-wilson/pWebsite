@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function card({name, image1, image2, repo, website, content}){
+function card({name, image1, image2, repo, website, content, isHosted}){
 
   return (
 
@@ -25,9 +25,17 @@ function card({name, image1, image2, repo, website, content}){
         <a href={repo} className="mt-2 inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           View Repo
         </a>
-        <a href={website} className="mt-2  inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+
+        {isHosted ? 
+        (<a href={website} className="mt-2  inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           try out app
-        </a>
+        </a> )
+        :
+          (<a href={website} className="mt-2  inline-flex items-center px-1 py-1 text-sm font-medium text-center text-white bg-gray-500 rounded-lg">
+            try out app
+          </a>)
+        }
+        
       </div>
       
     </motion.div>
