@@ -6,7 +6,7 @@ import sinatraIcon from '../public/icons/sinatraIcon.svg'
 import { DiNodejsSmall, DiMongodb, DiJsBadge, DiHtml5, DiPostgresql, DiBootstrap, DiRuby, DiJava } from 'react-icons/di'
 import { SiSpringboot, SiMysql } from 'react-icons/si'
 
-import Image from "next/image";
+import Image from "next/image"; 
 
 const techIcons = {
     multiNote: {
