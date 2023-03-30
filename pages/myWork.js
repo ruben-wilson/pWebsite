@@ -19,7 +19,7 @@ const myWork = () =>{
   }, [movement])
 
   return(
-    <div className='relative w-full min-h-full'>
+    <div className='relative w-full min-h-full '>
         <div className='absolute h-fit top-[10%] left-[13%] transform '>
         <h1 className='text-8xl  mb-2 py-4 md:text-base text-transparent bg-gradient-to-r bg-clip-text from-blue-400 to-white'>My recent projects...</h1>
         </div>
