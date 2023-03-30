@@ -19,7 +19,7 @@ import aceBook from "../public/screenshots/aceBook.png"
 import multiNote from "../public/screenshots/multiNote.png"
 import reefRunner from "../public/screenshots/reefrunnerSc.png"
 import chitter from "../public/screenshots/chitter.png"
-import BankAccount from "../public/screenshots/BankAccount.png"
+import BankAccount from "../public/screenshots/bankAccount.png"
 
 import Card from "./card"
 
