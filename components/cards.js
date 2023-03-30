@@ -2,7 +2,7 @@
 import {motion} from "framer-motion";
 import React, { useState, useEffect, useRef } from 'react';
 
-import Contents from '../components/techContent.js'
+import contents from '../components/techContent.js'
 
 
 
@@ -22,30 +22,31 @@ import chitter from "../public/screenshots/chitter.png"
 import Card from "./card"
 
 
-export default function cards(){
+const cards = ({ xValue }) => {
   const [width, setWidth] = useState(0)
+  
   const carousel = useRef();
-
 
   useEffect(() =>{
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
   }, [])
 
+  
+  
+
   return (
     <div >
       <motion.div ref={carousel} className="cursor-pointer overflow-hidden mt-[2rem] mb-4 max-h-[30rem] max-w-[50rem] rounded-xl">
-        <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex" id='cards-myWork'>
-          <Card name="ReefRunner" image1={reefRunnerLogo} image2={reefRunner} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" content={Contents.content.reefRunner} isHosted="true" />
-          <Card name="MultiNote" image1={multiNoteLogo} image2={multiNote} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://jazzy-taffy-d5f222.netlify.app" content={Contents.content.multiNote} isHosted="true" />
-          <Card name="AceBook" image1={aceBookLogo} image2={aceBook} content={Contents.content.aceBook} />
-          <Card name="Makers BnB" image1={makerBnbLogo} image2={makerBnb} content={Contents.content.makersBnb} />
-          <Card name="Chitter" image1={chitterLogo} image2={chitter} content={Contents.content.chitter} />
+        <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} animate={{ x: xValue.movement }} transition={{ duration: 0.4 }} className="flex" id='cards-myWork'>
+          <Card name="ReefRunner" image1={reefRunnerLogo} image2={reefRunner} repo="https://github.com/ruben-wilson/team-sea-urchins" website="https://resonant-ganache-a523ff.netlify.app/" content={contents.reefRunner} description={contents.reefRunner.description} isHosted="true" />
+          <Card name="MultiNote" image1={multiNoteLogo} image2={multiNote} repo="https://github.com/ruben-wilson/Multi-Note-front-end" website="https://jazzy-taffy-d5f222.netlify.app"  content={contents.multiNote} description={contents.multiNote.description} isHosted="true" />
+          <Card name="AceBook" image1={aceBookLogo} image2={aceBook} content={contents.aceBook} description={contents.aceBook.description} />
+          <Card name="Makers BnB" image1={makerBnbLogo} image2={makerBnb} content={contents.makersBnb} description={contents.makersBnb.description} />
+          <Card name="Chitter" image1={chitterLogo} image2={chitter} content={contents.chitter} description={contents.chitter.description} />
         </motion.div>
-        <div></div>
       </motion.div>
     </div> 
   )
 }
 
-
-
+module.exports = cards;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function card({name, image1, image2, repo, website, content, isHosted}){
+const card = ({ name, image1, image2, repo, website, content, description, isHosted}) => {
 
   return (
 
@@ -12,11 +12,11 @@ function card({name, image1, image2, repo, website, content, isHosted}){
         <Image className="w-[12.5rem] h-[8rem] rounded-[1rem] p-1" src={image2} draggable="false"></Image>
       </div>
       <p className="ml-2 mt-4 font-normal text-white dark:text-gray-400">Description:</p>
-      <p className="m-2 font-normal text-white dark:text-gray-400"> this is a project desgined to help people keep track of daily tasks and goals.</p>
+      <p className="m-2 font-normal text-white dark:text-gray-400">{description}</p>
       <p className="m-2 mt-4 font-normal text-white dark:text-gray-400">Technologies used:</p>
       <div className="flex justify-center">
         {
-          content.map( item => {
+          content.icons.map( item => {
             return item
           })
         }
@@ -44,4 +44,4 @@ function card({name, image1, image2, repo, website, content, isHosted}){
 
 }
 
-export default card;
+module.exports = card;
