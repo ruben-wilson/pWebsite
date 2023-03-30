@@ -3,7 +3,7 @@ import AvatarPainting from '../public/Avatar-painting.png';
 
 import ReadMore from "../components/readMore";
 
-export default function aboutMe(){
+const AboutMe = () => {
   return(
 
     <div className="flex">
@@ -21,3 +21,5 @@ export default function aboutMe(){
     
   )
 }
+
+module.exports = AboutMe;

@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin, BsPhoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 
 
-export default function contact(){
+const Contact = () => {
   return(
     <div>
       <div className="ml-20 mt-[10rem] text-7xl py-4 text-transparent bg-gradient-to-r bg-clip-text  from-red-600 to-white">
@@ -19,3 +19,5 @@ export default function contact(){
 
   )
 }
+
+module.exports = Contact;

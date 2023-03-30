@@ -5,7 +5,7 @@ import { GiTronArrow } from 'react-icons/gi';
 
 
 
-export default function Home() {
+const Home = () => {
 
   return (      
 
@@ -29,3 +29,5 @@ export default function Home() {
 
         )
 }
+
+module.exports = Home;
