@@ -29,7 +29,7 @@ const myWork = () =>{
                 <BiArrowFromRight size={100} /> 
             </button>
           </div>
-          <div className="container mx-auto mt-[12rem] mr">
+          <div className="mt-[12rem]">
           <Cards xValue={{movement}} />           
           </div>
           <div className='absolute top-[57%] left-[80%] transform'>
